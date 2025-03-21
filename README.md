@@ -2,6 +2,7 @@
   <h1>💫 StarVector: Generating Scalable Vector Graphics Code from Images and Text</h1>
   <img src="assets/starvector-xyz.png" alt="starvector" style="width: 800px; display: block; margin-left: auto; margin-right: auto;"/>
 
+
 <a href="https://arxiv.org/abs/2312.11556" target="_blank">
     <img alt="arXiv" src="https://img.shields.io/badge/arXiv-StarVector-red?logo=arxiv" height="25" />
 </a>
@@ -33,6 +34,22 @@
 </div>
 
 </div>
+
+```bash
+git clone https://github.com/svjack/star-vector.git
+cd star-vector
+
+conda create -n starvector python=3.11.3 -y
+conda activate starvector
+pip install ipykernel
+python -m ipykernel install --user --name starvector --display-name "starvector"
+pip install --upgrade pip  # enable PEP 660 support
+pip install torch torchvision
+pip install -e .
+pip install deepspeed
+
+#### use transformers interface
+```
 
 ## 🔥 News
 - March 2025: **StarVector Accepted at CVPR 2025**,
